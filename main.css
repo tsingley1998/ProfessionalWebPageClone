@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+header {
+    background-color: rgb(53, 61, 82);
+    margin: 0;
+    width: 100%;
+}
+
+.nav {
+    background-color: rgb(53, 61, 82);
+}
+
+.search {
+    margin: 10px 2px 2px 2px;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.logo {
+    float: left;
+    margin: 8px 2px 2px 8px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: black;
+    right: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+ul li {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul li a {
+        display: block;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: lightgrey;
+}
+
+ul li a:visited {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+li.search {
+    float: left;
+}
+
+.linkedInCover {
+    grid-column: 1 / span 6;
+    margin: 0px 0px -15% 0px;
+    z-index: 2;
+    display: inline;
+}
+
+.profile {
+    border-radius: 100%;
+    z-index: 1;
+    height: 170px;
+    width: 170px;
+    display: block;
+    margin: 0px 0px 0px 30px;
+}
+
+.ads {
+    background-color: lightgrey;
+    margin: 0px 10px 0px 0px;
+    padding: 10px 10px 100px 10px;
+    text-align: center;
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 1;
+    position: relative;
+}
+
+.container {
+    display: inline;
+}
+
+.aside {
+    grid-row: 1 / span 0.5;
+    grid-column: 10 / span 3;
+    margin: 30px 20px 100px 0px;
+    border: 4px solid rgb(155, 151, 151);
+    padding: 90px 20px 0px 40px;
+    position: relative;
+}
+
+.aside a {
+    text-decoration: none;
+    color: rgb(155, 151, 151);
+}
+
+figcaption {
+    margin: 10px 0px 0px 33px;
+    font-size: 25px;
+}
+
+.photos {
+    border: 2px solid lightgrey;
+    margin: 10px 0px 0px 10px;
+    padding: 0px 0px 10px 0px;
+    grid-column: 1 / span 8;
+    position: absolute;
+}
+
+.photos p {
+    margin: 0px 0px 10px 73px;
+}
+
+.about {
+    padding: 35px 35px 20px 35px;
+    border: 2px solid lightgrey;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 8;
+    margin: 0px 0px 0px 10px;
+}
+
+footer {
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 20px 0px 5px 10px;
+    color: rgb(155, 151, 151);
+}
+
+.bottomBorder {
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 10px;
+}
+
+.contact {
+    text-decoration: none;
+    color: rgb(67, 67, 247);
+}
